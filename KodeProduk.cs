@@ -22,7 +22,14 @@ namespace modul4
             { "Smartwatch", "E108"},
             {"Kamera", "E109" }
         };
-
+        /*
+         * using System.Collections.Generic; → Digunakan untuk mendukung Dictionary<>,
+yang merupakan struktur data berbasis key-value pair.B. Memanggil Method di Main
+- Dictionary<string, string> → Menyimpan pasangan nama produk (key) dan kode
+pos (value).
+- Data disimpan dalam bentuk key-value, sehingga pencarian kode produk menjadi cepat
+dan efisien.
+         */
         public string getKodeProduk(string produk) {
 
             return produkElek.ContainsKey(produk) ? produkElek[produk] : "produk tidak ditemukan";
