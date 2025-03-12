@@ -11,7 +11,6 @@
             string elek = Console.ReadLine();
             string kodeProd = produk.getKodeProduk(elek);
             Console.WriteLine($"Kode Produk {elek} : {kodeProd}");
-
             //membuat objek dan memanggil tiap state dengan urutan sesuai transition di jurnal
             FanLaptop fan = new FanLaptop();
             fan.Mode_Up();
